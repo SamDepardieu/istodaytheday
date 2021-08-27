@@ -1,7 +1,18 @@
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
 .block-answer {
-  position: absolute;
-  top: 45%;
-  left: 45%;
+  width: 100%;
+  height:100vh;
+  text-align: center;
   font-size: 4em;
   font-family: Arial;
+}
+
+.text-answer {
+  display: inline-block;
+  margin-top: 45vh;
+  vertical-align: middle;
 }
