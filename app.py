@@ -12,7 +12,11 @@ def index():
     answer = os.getenv('ANSWER_NEGATIVE')
     if datetime.now().weekday() == int(dow):
         answer = os.getenv('ANSWER_POSITIVE')
-    return render_template('index.html', answer=answer)
+    return render_template(
+        'index.html',
+        answer=answer,
+        question=os.getenv('TITLE_QUESTION'),
+    )
 
 
 if __name__ == "__main__":
